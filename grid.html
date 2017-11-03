@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0px;
+                border: 0px;
+            }
+
+            article{
+                border: 5px solid #CCCCCC;
+                height: 700px;
+                background-color: #ffffff;
+            }
+
+            #grid {
+                display:grid;
+                grid-template-columns: 330px 1fr;
+                
+            }
+
+            .site-main{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            header {
+                background-color: #23262A;
+            }
+
+            aside{
+                background-color: #cccccc;
+                height: 170px;
+            }
+
+            footer{
+                height: 700px;
+                background-color: #f2f2f2;
+            }
+
+            @media(max-width:1200px){
+                .site-main{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media(max-width:990px){
+                #grid{
+                    grid-template-columns: auto;
+                }
+                .site-main{
+                    grid-template-columns: auto;                    
+                }
+                header{
+                    height: 500px;
+                }
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="grid">
+            <header>
+                header
+            </header>
+            <main>
+                <div class="site-main">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                </div>
+                <aside></aside>
+                <footer></footer>
+            </main>
+        </div>
+            
+    </body>
+</html>
