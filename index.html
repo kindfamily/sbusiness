@@ -17,7 +17,11 @@
             #grid {
                 display:grid;
                 grid-template-columns: 330px 1fr;
-                
+                grid-template-areas:
+               "header main"
+			   "header aside"
+               "header footer";
+
             }
 
             .site-main{
@@ -27,16 +31,41 @@
 
             header {
                 background-color: #23262A;
+                height: 100%;
+                color: palegreen;
+                grid-area: header;
+            }
+
+            .site-branding{
+                position: fixed;
+                border: 1px solid wheat;
+                height: 300px;
+                width: 330px;
+            }
+
+            nav{
+                position: fixed;
+                border: 1px solid wheat;
+                top: 300px; 
+                height: 300px;                
+                width: 330px;
+            }
+
+            main{
+                grid-area: main;
             }
 
             aside{
                 background-color: #cccccc;
                 height: 170px;
+                grid-area: aside;
+
             }
 
             footer{
                 height: 700px;
                 background-color: #f2f2f2;
+                grid-area: footer;
             }
 
             @media(max-width:1200px){
@@ -48,6 +77,14 @@
             @media(max-width:990px){
                 #grid{
                     grid-template-columns: auto;
+                    grid-template-areas:
+                    "header"
+                    "main"
+			        "aside"
+                    "footer";
+                }
+                nav{
+                    position: absolute;
                 }
                 .site-main{
                     grid-template-columns: auto;                    
@@ -61,7 +98,8 @@
     <body>
         <div id="grid">
             <header>
-                header
+                <div class="site-branding">site-branding</div>
+                <nav>nav</nav>
             </header>
             <main>
                 <div class="site-main">
@@ -72,9 +110,9 @@
                         <article></article>
                         <article></article>
                 </div>
-                <aside></aside>
-                <footer></footer>
             </main>
+            <aside></aside>
+            <footer></footer>
         </div>
             
     </body>
