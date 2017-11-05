@@ -2,17 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./fontello-1770e49c/css/fontello.css">
+
         <style>
-            body{
+            body, h1, p, i{
                 margin: 0px;
                 border: 0px;
             }
 
-            article{
-                border: 5px solid #CCCCCC;
-                height: 700px;
-                background-color: #ffffff;
-            }
+           
 
             #grid {
                 display:grid;
@@ -24,6 +22,19 @@
 
             }
 
+            #site-branding{
+                padding: 50px 50px 0px 50px;
+                border: 1px solid powderblue;
+            }
+
+            
+
+            article{
+                border: 5px solid #CCCCCC;
+                height: 700px;
+                background-color: #ffffff;
+            }
+            
             .site-main{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -39,9 +50,18 @@
             .site-branding{
                 position: fixed;
                 border: 1px solid wheat;
+                top: 0px;
                 height: 300px;
                 width: 330px;
             }
+
+            .icon-noun_1195043_cc{
+                color:#CCCCCC;
+                font-size: 10rem;
+
+            }
+
+
 
             nav{
                 position: fixed;
@@ -49,6 +69,10 @@
                 top: 300px; 
                 height: 300px;                
                 width: 330px;
+            }
+            .list{
+
+                list-style: none;
             }
 
             main{
@@ -91,15 +115,27 @@
                 }
                 header{
                     height: 500px;
+                    text-align: center;
                 }
+
+
+
             }
         </style> 
     </head>
     <body>
         <div id="grid">
             <header>
-                <div class="site-branding">site-branding</div>
-                <nav>nav</nav>
+                <div id="site-branding">
+                    <i class="icon-noun_1195043_cc"></i>
+                    <h1>SBUSSINESS</h1>
+                    <p>Seaching new bussiness for community</p>
+                </div>
+                <nav>
+                    <ol class="list">
+                        <li>교육</li>
+                    </ol>
+                </nav>
             </header>
             <main>
                 <div class="site-main">
