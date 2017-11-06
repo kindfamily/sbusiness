@@ -5,9 +5,15 @@
         <link rel="stylesheet" href="./fontello-1770e49c/css/fontello.css">
 
         <style>
-            body, h1, p, i{
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+            @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+            body, h1, h2, p, i{
                 margin: 0px;
                 border: 0px;
+                padding: 0px;
+                color: white;
             }
 
            
@@ -19,16 +25,24 @@
                "header main"
 			   "header aside"
                "header footer";
-
             }
 
             #site-branding{
-                padding: 50px 50px 0px 50px;
-                border: 1px solid powderblue;
+                position: fixed;
+                padding: 0px;
+                /* border: 1px solid blue; */
+                top: 0px;
+                height: 300px;
+                width: 330px;
+                color: white;
+                text-align: center;
+                margin-top: 50px;
             }
 
-            
+            #site-description{
+                font-family: 'Nanum Brush Script', serif;
 
+            }
             article{
                 border: 5px solid #CCCCCC;
                 height: 700px;
@@ -47,32 +61,36 @@
                 grid-area: header;
             }
 
-            .site-branding{
-                position: fixed;
-                border: 1px solid wheat;
-                top: 0px;
-                height: 300px;
-                width: 330px;
-            }
-
             .icon-noun_1195043_cc{
-                color:#CCCCCC;
                 font-size: 10rem;
-
             }
 
-
+            .icon-lightbulb{
+                position: fixed;
+                display: block;
+                /* border: 1px solid powderblue; */
+                top: 350px;
+                width: 330px;
+                text-align: center;
+                font-size: 10px;
+                color: white;
+            }
 
             nav{
                 position: fixed;
-                border: 1px solid wheat;
-                top: 300px; 
+                color: white;
+                /* border: 1px solid wheat; */
+                top: 400px; 
                 height: 300px;                
                 width: 330px;
             }
             .list{
-
                 list-style: none;
+                padding-left: 60px;
+            }
+
+            .list >li{
+                padding: 10px;
             }
 
             main{
@@ -107,9 +125,43 @@
 			        "aside"
                     "footer";
                 }
+                #site-branding{
+                    position: absolute;
+                    height: auto;
+                    width: 100%;
+                    padding: 20px 0px 0px 0px;
+                }
+
+                .icon-lightbulb{
+                    display: none;
+                }
+
+
                 nav{
                     position: absolute;
+                    /* top: 280px; */
+                    width: 100%;
+                    height: auto;
                 }
+                
+                .list{
+                    height: 100px;   
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+
+                .list > li{
+                    display: inline-block;
+                    list-style: none;
+                    background-color: #2E3135;
+                    /* border: 1px solid paleturquoise; */
+                    padding: 30px;
+                    border-radius: 8px;
+                    margin: 3px;
+                }
+
+                
                 .site-main{
                     grid-template-columns: auto;                    
                 }
@@ -129,11 +181,16 @@
                 <div id="site-branding">
                     <i class="icon-noun_1195043_cc"></i>
                     <h1>SBUSSINESS</h1>
-                    <p>Seaching new bussiness for community</p>
+                    <p><h2 id="site-description">신규사업 비교 사이트</h2></p>
+                    
                 </div>
+                <div class="icon-lightbulb"></div>
                 <nav>
                     <ol class="list">
-                        <li>교육</li>
+                        <li>home</li>
+                        <li>list&nbsp; &nbsp; <i class="icon-right-dir"></i></li>
+                        <li>about</li>
+                        <li>contact</li>
                     </ol>
                 </nav>
             </header>
