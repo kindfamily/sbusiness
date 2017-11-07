@@ -101,12 +101,25 @@
                 grid-area: main;
             }
 
-            article{
+             article{
                 text-align: center;
+                color: black;
+           }
+            /*
+            article > figure > div{
+                margin: 0;
+                border:1px solid gray;
+                background-color: gold;
             }
+            article > header{
+                border:1px solid gray;
+            }
+            article > div{
+                border:1px solid gray;
+            } */
 
             .icon-plus-squared{
-                position: absolute;
+                /* position: absolute; */
                 color: gray;
                 font-size: 12.7rem;
             }
@@ -183,6 +196,25 @@
                     grid-template-columns: auto;                    
                 }
 
+                article{
+                text-align: center;
+                color: black;
+                margin: -45px;
+                }
+
+                article > figure > div{
+                    /* position: absolute; */
+                    margin: 0;
+                    border:1px solid gray;
+                    background-color: gold;
+                }
+                article > header{
+                    border:1px solid gray;
+                }
+                article > div{
+                    border:1px solid gray;
+                }
+
                 .icon-plus-squared{
                     font-size: 20rem;
                     left: 11%;
@@ -220,10 +252,10 @@
             <main>
                 <div class="site-main">
                         <article>
-                            <div class="icon-plus-squared"></div>
-                            <header></header>
-                            <div></div>
-                            <div></div>
+                            <figure><div class="icon-plus-squared"></div></figure>
+                            <header>header</header>
+                            <div>2017-11-06</div>
+                            <div>description</div>
                         </article>
                         <article><div class="icon-plus-squared"></div></article>
                         <article><div class="icon-plus-squared"></div></article>
