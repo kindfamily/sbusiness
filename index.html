@@ -10,8 +10,14 @@
             @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
             @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
-            html{
+            html, body{
                 font-size: 20px;
+                
+            }
+
+            body{
+                width: 100%;
+                height: 100%;
             }
 
             body, h1, h2, p, i{
@@ -31,35 +37,6 @@
 			   "header aside"
                "header footer";
             }
-
-            #site-branding{
-                position: fixed;
-                padding: 0px;
-                /* border: 1px solid blue; */
-                top: 0px;
-                height: 300px;
-                width: 330px;
-                color: white;
-                text-align: center;
-                margin-top: 50px;
-            }
-
-            #site-description{
-                font-family: 'Nanum Brush Script', serif;
-                font-weight: 900;
-
-            }
-            article{
-                border: 5px solid #CCCCCC;
-                height: 700px;
-                background-color: #ffffff;
-            }
-            
-            .site-main{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
             .header {
                 background-color: #23262A;
                 height: 100%;
@@ -96,33 +73,56 @@
             .list >li{
                 padding: 10px;
             }
+            
+            #site-branding{
+                position: fixed;
+                padding: 0px;
+                top: 0px;
+                height: 300px;
+                width: 330px;
+                color: white;
+                text-align: center;
+                margin-top: 50px;
+            }
 
+            #site-description{
+                font-family: 'Nanum Brush Script', serif;
+                font-weight: 900;
+
+            }
+            
+            .site-main{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            article{
+                border: 5px solid #CCCCCC;
+                height: 700px;
+                width: auto;
+                background-color: #ffffff;
+            }
+            
             main{
                 grid-area: main;
             }
 
-             article{
+            article{
                 text-align: center;
                 color: black;
-           }
-            /*
-            article > figure > div{
+            }
+            
+            article > figure{
+                
                 margin: 0;
-                border:1px solid gray;
                 background-color: gold;
             }
-            article > header{
-                border:1px solid gray;
-            }
-            article > div{
-                border:1px solid gray;
-            } */
-
+           
             .icon-plus-squared{
-                /* position: absolute; */
                 color: gray;
-                font-size: 12.7rem;
-            }
+                font-size: 5rem;
+                
+            } 
             aside{
                 background-color: #cccccc;
                 height: 170px;
@@ -136,10 +136,18 @@
             }
 
             @media(max-width:1200px){
+                /* #grid {
+                display:grid;
+                grid-template-columns: 330px 1fr 1fr 1fr;
+                } */
+
+                article{
+                    width: auto;
+                }
                 .site-main{
                     grid-template-columns: 1fr 1fr;
+                    }
                 }
-            }
 
             @media(max-width:990px){
                 #grid{
@@ -199,12 +207,13 @@
                 article{
                 text-align: center;
                 color: black;
-                margin: -45px;
+                height: 1000px;
+                /* margin: -45px; */
                 }
 
                 article > figure > div{
                     /* position: absolute; */
-                    margin: 0;
+                    /* margin: 0; */
                     border:1px solid gray;
                     background-color: gold;
                 }
@@ -216,7 +225,7 @@
                 }
 
                 .icon-plus-squared{
-                    font-size: 20rem;
+                    font-size: 8rem;
                     left: 11%;
                     margin: 0px;
 
@@ -257,7 +266,12 @@
                             <div>2017-11-06</div>
                             <div>description</div>
                         </article>
-                        <article><div class="icon-plus-squared"></div></article>
+                        <article>
+                            <figure><div class="icon-plus-squared"></div></figure>
+                            <header>header</header>
+                            <div>2017-11-06</div>
+                            <div>description</div>
+                        </article>
                         <article><div class="icon-plus-squared"></div></article>
                         <article><div class="icon-plus-squared"></div></article>
                         <article><div class="icon-plus-squared"></div></article>
