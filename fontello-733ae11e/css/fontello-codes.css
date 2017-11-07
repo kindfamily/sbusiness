@@ -21,8 +21,12 @@
 .icon-thumbs-up:before { content: '\e813'; } /* '' */
 .icon-music:before { content: '\e814'; } /* '' */
 .icon-folder:before { content: '\e815'; } /* '' */
+.icon-plus:before { content: '\e816'; } /* '' */
+.icon-plus-circled:before { content: '\e817'; } /* '' */
 .icon-chrome:before { content: '\e841'; } /* '' */
 .icon-github:before { content: '\f055'; } /* '' */
+.icon-plus-squared:before { content: '\f0fe'; } /* '' */
 .icon-male:before { content: '\f183'; } /* '' */
+.icon-plus-squared-alt:before { content: '\f196'; } /* '' */
 .icon-user-plus:before { content: '\f234'; } /* '' */
 .icon-facebook-circled:before { content: '\f30d'; } /* '' */
