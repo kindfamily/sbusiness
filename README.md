@@ -11,3 +11,4 @@ https://codepen.io/joshbivens/pen/jbNJJR
 모바일 접속시 확대 되지 않도록 하는 코드
 https://www.thewordcracker.com/basic/disable-pinch-to-zoom-in-wordpress/
 
+>> 크롬에서는 작동하지만 사파리에서는 작동안함, 수평 부분 움직임이 어색해짐
