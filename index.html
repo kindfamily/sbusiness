@@ -60,7 +60,7 @@
                 grid-template-columns: 1fr 1fr 1fr;
             }
 
-            header {
+            .header {
                 background-color: #23262A;
                 height: 100%;
                 color: palegreen;
@@ -74,7 +74,6 @@
             .icon-lightbulb{
                 position: fixed;
                 display: block;
-                /* border: 1px solid powderblue; */
                 top: 390px;
                 width: 330px;
                 text-align: center;
@@ -85,7 +84,6 @@
             nav{
                 position: fixed;
                 color: white;
-                /* border: 1px solid wheat; */
                 top: 400px; 
                 height: 300px;                
                 width: 330px;
@@ -108,9 +106,9 @@
             }
 
             .icon-plus-squared{
-                border: 1px solid black;
+                position: absolute;
                 color: gray;
-                font-size: 10rem;
+                font-size: 12.7rem;
             }
             aside{
                 background-color: #cccccc;
@@ -160,7 +158,6 @@
 
                 nav{
                     position: absolute;
-                    /* top: 280px; */
                     width: 100%;
                     height: auto;
                 }
@@ -177,7 +174,6 @@
                     list-style: none;
                     background-color: #2E3135;
                     font-size: 2rem;
-                    /* border: 1px solid paleturquoise; */
                     padding: 5x;
                     border-radius: 8px;
                     margin: 5px;
@@ -186,23 +182,29 @@
                 .site-main{
                     grid-template-columns: auto;                    
                 }
-                header{
+
+                .icon-plus-squared{
+                    font-size: 20rem;
+                    left: 11%;
+                    margin: 0px;
+
+                }
+
+                .header{
                     height: 700px;
                     text-align: center;
                 }
-
-
 
             }
         </style> 
     </head>
     <body>
         <div id="grid">
-            <header>
+            <header class="header">
                 <div id="site-branding">
                     <i class="icon-noun_1195043_cc"></i>
                     <h1>SBUSSINESS</h1>
-                    <p><h2 id="site-description">신규사업 비교 사이트</h2></p>
+                    <p><h2 id="site-description">신사업 정보 사이트</h2></p>
                     
                 </div>
                 <div class="icon-lightbulb"></div>
@@ -217,12 +219,18 @@
             </header>
             <main>
                 <div class="site-main">
-                        <article><i class="icon-plus-squared"></i></article>
-                        <article></article>
-                        <article></article>
-                        <article></article>
-                        <article></article>
-                        <article></article>
+                        <article>
+                            <div class="icon-plus-squared"></div>
+                            <header></header>
+                            <div></div>
+                            <div></div>
+                        </article>
+                        <article><div class="icon-plus-squared"></div></article>
+                        <article><div class="icon-plus-squared"></div></article>
+                        <article><div class="icon-plus-squared"></div></article>
+                        <article><div class="icon-plus-squared"></div></article>
+                        <article><div class="icon-plus-squared"></div></article>
+                        
                 </div>
             </main>
             <aside></aside>
