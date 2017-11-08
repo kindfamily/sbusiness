@@ -25,3 +25,9 @@ https://msdn.microsoft.com/ko-kr/library/hh673533(v=vs.85).aspx
 
 + css로 글자수넘어가면 ...로 처리하기
 http://jos39.tistory.com/211
+
++ 모바일에서 확대 금지
+mata 태그와 관계 있는 것으로 보임
+http://playnode.io/2017/
+
+>> 크롬에서는 작동 , 사파리에서는 작동안됨
