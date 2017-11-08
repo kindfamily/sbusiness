@@ -18,7 +18,10 @@ http://start.goodtime.co.kr/2014/02/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%EA%B0%
 
 http://jsfiddle.net/xwrvxser/1/
 
+
 + 문제발생
 
 https://msdn.microsoft.com/ko-kr/library/hh673533(v=vs.85).aspx
 
++ css로 글자수넘어가면 ...로 처리하기
+http://jos39.tistory.com/211
