@@ -12,3 +12,7 @@ https://codepen.io/joshbivens/pen/jbNJJR
 https://www.thewordcracker.com/basic/disable-pinch-to-zoom-in-wordpress/
 
 >> 크롬에서는 작동하지만 사파리에서는 작동안함, 수평 부분 움직임이 어색해짐
+
++ 문제발생
+
+https://msdn.microsoft.com/ko-kr/library/hh673533(v=vs.85).aspx
