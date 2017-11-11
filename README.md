@@ -7,11 +7,15 @@ sbusiness2018.ga
 firebase 댓글
 https://codepen.io/joshbivens/pen/jbNJJR
 
-+ 새롭게 알게된것
+++ 새롭게 알게된것
 모바일 접속시 확대 되지 않도록 하는 코드
 https://www.thewordcracker.com/basic/disable-pinch-to-zoom-in-wordpress/
 
 >> 크롬에서는 작동하지만 사파리에서는 작동안함, 수평 부분 움직임이 어색해짐 >> 아이콘의 사이즈 때문에 생긴문제
+
++ 말줄임 css 처리
+http://blog.tjsrms.me/css-%EB%A7%90%EC%A4%84%EC%9E%84-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/
+
 
 + 가로세로 비율 맞추면서 이미지 줄여서 넣기
 http://start.goodtime.co.kr/2014/02/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%EA%B0%80%EB%A1%9C%EC%84%B8%EB%A1%9C%EB%B9%84%EB%A5%BC-%EC%9C%A0%EC%A7%80%ED%95%98%EB%A9%B4%EC%84%9C-%ED%8B%80-%EC%95%88%EC%97%90-%EB%A7%9E%EC%B6%94%EB%A0%A4/
@@ -31,3 +35,4 @@ mata 태그와 관계 있는 것으로 보임
 http://playnode.io/2017/
 
 >> 크롬에서는 작동 , 사파리에서는 작동안됨
+
