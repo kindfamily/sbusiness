@@ -11,287 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
          -->
         <link rel="stylesheet" href="./fontello-733ae11e/css/fontello.css">
-
-        <style>
-            @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-            @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-            @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-
-            html, body{
-                font-size: 20px;
-                
-            }
-            body{
-                width: 100%;
-                height: 100%;
-            }
-
-            body, h1, h2, p, i{
-                margin: 0px;
-                border: 0px;
-                padding: 0px;
-            }
-
-           
-
-            #grid {
-                display:grid;
-                grid-template-columns: 330px 1fr;
-                grid-template-areas:
-               "header main"
-			   "header aside"
-               "header footer";
-            }
-            .header {
-                background-color: #23262A;
-                height: 100%;
-                color: palegreen;
-                grid-area: header;
-            }
-
-            .icon-noun_1195043_cc{
-                font-size: 10rem;
-            }
-
-            .icon-lightbulb{
-                position: fixed;
-                display: block;
-                top: 390px;
-                width: 330px;
-                text-align: center;
-                font-size: 0.8rem;
-                color: white;
-            }
-
-            nav{
-                position: fixed;
-                color: white;
-                top: 400px; 
-                height: 300px;                
-                width: 330px;
-            }
-            .list{
-                list-style: none;
-                padding-left: 60px;
-            }
-
-            .list >li{
-                padding: 10px;
-            }
-            
-            #site-branding{
-                position: fixed;
-                padding: 0px;
-                top: 0px;
-                height: 300px;
-                width: 330px;
-                color: white;
-                text-align: center;
-                margin-top: 50px;
-            }
-
-            #site-description{
-                font-family: 'Nanum Brush Script', serif;
-                font-weight: 900;
-
-            }
-            
-            .site-main{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-            article{
-                text-align: center;
-                color: black;
-                border: 5px solid #CCCCCC;
-                height: 700px;
-                width: auto;
-                background-color: #ffffff;
-            }
-            
-            article > figure{
-                border: 1px solid rgb(196, 190, 190);
-            }
-
-            .ellipsis-multi{
-                padding: 10px;
-                height:700px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 6; /* 라인수 */
-                -webkit-box-orient: vertical;
-                word-wrap:break-word; 
-                line-height: 1.2em;
-                height: 6.6em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
-            }
-
-            article > header{
-                padding: 5px;
-            }
-
-            
-
-            .nextposting{
-                background: gold;
-                display: block;
-                border-bottom-right-radius: 70px;
-            }
-
-            main{
-                grid-area: main;
-            }
-
-            article > figure{
-                display: inline-block;                
-                margin: 0;
-                /* background-color: gold; */
-            }
-            article > figure > img{
-                max-width: 100%;
-                max-height: 100%;
-            }
-           
-            .icon-plus-squared{
-                color: gray;
-                font-size: 5rem;
-                
-            } 
-            aside{
-                background-color: #cccccc;
-                height: 170px;
-                grid-area: aside;
-            }
-
-            footer{
-                height: 700px;
-                background-color: #f2f2f2;
-                grid-area: footer;
-            }
-
-            @media(max-width:1200px){
-                /* #grid {
-                display:grid;
-                grid-template-columns: 330px 1fr 1fr 1fr;
-                } */
-
-                article{
-                    width: auto;
-                }
-                .site-main{
-                    grid-template-columns: 1fr 1fr;
-                    }
-                }
-
-            @media(max-width:990px){
-                #grid{
-                    grid-template-columns: auto;
-                    grid-template-areas:
-                    "header"
-                    "main"
-			        "aside"
-                    "footer";
-                }
-
-                #site-branding{
-                    font-size: 2.1rem;
-                    position: absolute;
-                    height: auto;
-                    width: 100%;
-                    padding: 20px 0px 0px 0px;
-                }
-
-                .icon-noun_1195043_cc{
-                    font-size: 17rem;
-                    padding: 10px;
-                }
-
-                .icon-lightbulb{
-                    display: none;
-                }
-
-
-                nav{
-                    position: absolute;
-                    width: 100%;
-                    height: auto;
-                }
-                
-                .list{
-                    height: 100px;   
-                    padding: 0px;
-                    margin: 0px;
-                }
-
-
-                .list > li{
-                    display: inline-block;
-                    list-style: none;
-                    background-color: #2E3135;
-                    font-size: 2rem;
-                    padding: 5x;
-                    border-radius: 8px;
-                    margin: 5px;
-                }
-
-                .site-main{
-                    grid-template-columns: auto;                    
-                }
-
-                article{
-                text-align: center;
-                color: black;
-                height: 1000px;
-                /* margin: -45px; */
-                }
-
-                article > figure > div{
-                    /* position: absolute; */
-                    /* margin: 0; */
-                    border:1px solid gray;
-                    background-color: gold;
-                }
-                article > header{
-                    border:1px solid gray;
-                }
-                article > div{
-                    border:1px solid gray;
-                }
-
-                .icon-plus-squared{
-                    font-size: 8rem;
-                    left: 11%;
-                    margin: 0px;
-
-                }
-
-                .header{
-                    height: 700px;
-                    text-align: center;
-                }
-            @media(max-width:558px){
-                .list{
-                    padding-top: 120px;
-                }
-                .list > li{
-                    font-size: 1rem;
-                }
-                .icon-noun_1195043_cc{
-                    font-size: 13rem;
-                    padding: 0;
-                    margin: 0;
-                }
-
-                #site-branding{
-                    font-size: 1.5rem;
-                  }
-
-                }    
-
-            }
-        </style> 
+        <link rel="stylesheet" href="./style.css">
+        
+        
     </head>
     <body>
         <div id="grid">
@@ -299,13 +21,13 @@
                 <div id="site-branding">
                     <i class="icon-noun_1195043_cc"></i>
                     <h1>SBUSSINESS</h1>
-                    <p><h2 id="site-description">신사업 정보 사이트</h2></p>
+                    <p><h2 id="site-description">코딩교육 정보 사이트</h2></p>
                 </div>
                 <div class="icon-lightbulb"></div>
                 <nav>
                     <ol class="list">
                         <li>home</li>
-                        <li>list<i class="icon-right-dir"></i></li>
+                        <li><s>list</s></i></li>
                         <li>about</li>
                         <li>contact</li>
                     </ol>
@@ -324,11 +46,11 @@
                             </header>
                             <span>Published August 10, 2017</span>
                             <div>
-                                <p class="ellipsis-multi">ios11부터 추가된 애플의 코딩교육 플랫폼입니다.ipad에서만 실행이 가능하며 다야한 기기들과 호환 되어 코딩이 가능합니다iOS 10.3 버전 이상이 필요. iPad Air, iPad Air Wi-Fi + Cellular, iPad mini 2, iPad mini 2 Wi-Fi + Cellular, iPad Air 2, iPad Air 2 Wi-Fi + Cellular, iPad mini 3, iPad mini 3 Wi-Fi + Cellular, iPad mini 4, iPad mini 4 Wi-Fi + Cellular, 12.9형 iPad Pro, 12.9형 iPad Pro Wi-Fi + Cellular, 9.7형 iPad Pro, 9.7형 iPad Pro Wi-Fi + Cellular, iPad(5세대), iPad Wi-Fi + Cellular(5세대), 12.9형 iPad Pro(2세대), 12.9형 iPad Pro Wi‑Fi + Cellular(2세대), 10.5형 iPad Pro 및 10.5형 iPad Pro Wi‑Fi + Cellular와(과) 호환.<p>
+                                <p class="ellipsis-multi">ios11부터 추가된 애플의 코딩교육 플랫폼입니다.ipad에서만 실행이 가능하며 다양한 기기들과 호환 되어 코딩이 가능합니다<br><br>iOS 10.3 버전 이상이 필요. iPad Air, iPad Air Wi-Fi + Cellular, iPad mini 2, iPad mini 2 Wi-Fi + Cellular, iPad Air 2, iPad Air 2 Wi-Fi + Cellular, iPad mini 3, iPad mini 3 Wi-Fi + Cellular, iPad mini 4, iPad mini 4 Wi-Fi + Cellular, 12.9형 iPad Pro, 12.9형 iPad Pro Wi-Fi + Cellular, 9.7형 iPad Pro, 9.7형 iPad Pro Wi-Fi + Cellular, iPad(5세대), iPad Wi-Fi + Cellular(5세대), 12.9형 iPad Pro(2세대), 12.9형 iPad Pro Wi‑Fi + Cellular(2세대), 10.5형 iPad Pro 및 10.5형 iPad Pro Wi‑Fi + Cellular와(과) 호환.<p>
                             </div>
                         </article>
                         <article>
-                            <figure class="nextposting"><div class="icon-plus-squared"></div></figure>
+                            <figure class="nextposting"><a href="./ckeditor.html"><div class="icon-plus-squared"></div></a></figure>
                             <header>
                                 <div>PARROT MINE MAMBO</div>
                                 <h2>오픈소스 드론 제작 업체</h2>
