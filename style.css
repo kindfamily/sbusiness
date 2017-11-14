@@ -98,14 +98,14 @@ main{
 article{
     text-align: center;
     color: black;
-    border: 5px solid #CCCCCC;
+    /* border: 5px solid #CCCCCC; */
     height: 700px;
     width: auto;
     background-color: #ffffff;
 }
 
 article > figure{
-    border: 1px solid rgb(196, 190, 190);
+    /* border: 1px solid rgb(196, 190, 190); */
 }
 
 .ellipsis-multi{
@@ -130,7 +130,8 @@ article > header{
 .nextposting{
     background: gold;
     display: block;
-    border-bottom-right-radius: 70px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 20px;
 }
 
 article > figure{
@@ -246,17 +247,16 @@ footer{
         background-color: gold;
     }
     article > header{
-        border:1px solid gray;
+        /* border:1px solid gray; */
     }
     article > div{
-        border:1px solid gray;
+        /* border:1px solid gray; */
     }
 
     .icon-plus-squared{
         font-size: 8rem;
         left: 11%;
         margin: 0px;
-
     }
 
     .header{
