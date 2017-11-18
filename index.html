@@ -39,10 +39,8 @@
                 <div class="site-main">
 <article id="article1">
     <figure>
-        <a href="./articledetail.html">
             <img src="./img/playground.png" alt="">
             <!-- <div class="icon-plus-squared"></div> -->    
-        </a>
         </figure>
     <header>
         <span>PLAYGROUND</span>
@@ -149,7 +147,8 @@
 
     <script>
         $("#article1").click(function(){
-            $(location).attr('href',http://sbusiness2018.ga/articledetail.html);
+            var url = "http://sbusiness2018.ga/articledetail.html";  
+            $(location).attr('href',url);
         });
     </script>
     </body>
