@@ -19,6 +19,15 @@ a{
     color: white;    
 }
 
+/* heaer  */
+.header {
+    background-color: #23262A;
+    height: 100%;
+    color: palegreen;
+    grid-area: header;
+}
+
+
 #grid {
     display: grid;
     grid-template-columns: 330px 1fr;
@@ -28,13 +37,6 @@ a{
    "header footer";
 }
 
-/* heaer  */
-.header {
-    background-color: #23262A;
-    height: 100%;
-    color: palegreen;
-    grid-area: header;
-}
 
 #site-branding{
     position: fixed;
