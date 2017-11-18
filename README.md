@@ -41,3 +41,5 @@ http://playnode.io/2017/
 
 jquery click 이벤트 했을때 css 변경하는 내용 찾아보기 
 
++ 해볼내용
+해커톤 보험 소스에서 json 파일 불러와서 뿌려주는 예제 만들어 보기
